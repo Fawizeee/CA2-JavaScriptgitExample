@@ -1,119 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: sans-serif;
-    font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    background: linear-gradient(#866d94, #d6c0e2);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(#d1cfd3, #d6c0e2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(116, 84, 84);
 }
 
 .container {
-    margin: 50px auto;
-    width: 50%;
+  margin: 50px auto;
+  width: 50%;
+}
+
+.rule {
+  height: 1px;
+  width: 100%;
+  background-color: black;
 }
 
 .container h1 {
-    text-align: center;
-    font-family: "New Amsterdam", sans-serif;
-    font-size: 50px;
+  text-align: center;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 50px;
 }
 
 .addsection p {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .container .addsection {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .container input {
-    width: 550px;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-style: none none solid none;
-    border-radius: 5px;
-    transition: ease 0.3s;
+  width: 550px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-style: none none solid none;
+  border-radius: 5px;
+  transition: ease 0.3s;
 }
 
 .container input:focus {
-    outline: none;
-    border-color: #4a009f;
+  outline: none;
+  border-color: #4a009f;
 }
 
 .addsection button {
-    margin-left: 20px;
-    width: 100px;
-    color: white;
-    border-radius: 5px;
-    padding: 14px 20px;
-    cursor: pointer;
-    background-color: #310077;
-    transition: ease 0.3s;
-    font-size: 18px;
+  margin-left: 20px;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 20px;
+  cursor: pointer;
+  background-color: #744cac;
+  border: none;
+  transition: ease 0.3s;
+  font-size: 18px;
 }
 
 .addsection button:hover {
-    width: 150px;
-    background-color: #4a009f;
+  width: 150px;
+  background-color: #4a009f;
 }
 
 .lists {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .lists p {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .lists li {
-    background-color: #d6c0e2;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    list-style-type: square;
-    list-style-position: inside;
-    transition: ease 0.5s;
+  background-color: #d6c0e2;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  list-style-type: square;
+  list-style-position: inside;
+  transition: ease 0.5s;
 }
 
 .lists button {
-    float: right;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 li:hover button {
-    display: block;
+  display: block;
 }
 
 .error {
-    background-color: rgb(188, 92, 92);
-    border-style: none none none solid;
-    border-width: 10px;
-    padding: 0px 15px;
-    width: 200px;
-    border-color: red;
-    color: rgb(47, 30, 30);
-    font-weight: 600;
-    transition: ease 0.3s;
+  background-color: rgb(188, 92, 92);
+  border-style: none none none solid;
+  border-width: 10px;
+  padding: 0px 15px;
+  width: 200px;
+  border-color: red;
+  color: rgb(47, 30, 30);
+  font-weight: 600;
+  transition: ease 0.3s;
 }
 
 .error:hover {
-    width: 210px;
+  width: 210px;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: gray;
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+    margin: 0;
+
+    input {
+      width: 200px;
+    }
+  }
+
+  .addsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addsection button:hover {
+    width: 110px;
+  }
+
+  .lists {
+    padding: 0 30px;
+  }
 }
